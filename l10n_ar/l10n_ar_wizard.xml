@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		 <wizard string="Verifica CUIT" model="res.partner" name="l10n_ar.verifica_cuit"  id="l10n_ar_verifica_cuit"/>
+	</data>
+</openerp>
+
