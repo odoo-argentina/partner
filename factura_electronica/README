@@ -1,0 +1,58 @@
+       
+#    Copyright (C) 2008-today  Luis Falcon
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+** English version at the end of the message
+
+La funcionalidad de facturación electrónica permite enviar lotes de comprobantes a la Administración Federal de Ingresos Públicos (AFIP), donde serán procesadas. No hay necesidad de usar más papel ni facturas pre-impresas.
+
+En el laboratorio de I+D de Thymbra - Torre de Hanoi - hemos desarrollado el módulo de Facturación electrónica para OpenERP. Si bien está creado y adaptado a la normativa Argentina, el concepto es similar en otros países.
+
+La facturación electrónica nos permite generar documentos y comprobantes (distintos tipos de facturas, notas de crédito, débito, ...) sin necesidad de imprimirlos. Ahorramos espacio, tiempo, dinero y colaboramos con la naturaleza.
+
+Con el módulo de facturación electrónica de OpenERP podemos generar lotes de facturas de manera automática. Se genera un documento que es procesado por la Administración Federal de Ingresos Públicos (AFIP), la cual nos emite un Código de Autorización Electrónica (CAE), dándole validez legal al documento.
+
+Una vez tenemos el CAE, le podemos enviar al cliente una copia por email la factura, o del lote de facturas. El cliente también puede consultar en línea el estado de su factura, por lo que lo del envío por mail es opcional.
+
+Los pasos principales son :
+
+Generación en OpenERP -> documento XML / webservice -> CAE -> envío email
+
+Si bien al día de hoy es un módulo independiente, es parte de la localización argentina (l10n_ar) que empezamos desde el 2005.
+
+------------
+
+English
+
+At Thymbra R+D Labs - Torre de Hanoi - we have developed the Electronic Invoicing module. Even though it has been localised to Argentina, most of the concepts are valid for other countries.
+
+Electronic Invoicing allows us to generate documents (different types of invoices, Credit or Debit notes .. ) without the need of printing them. We save space, time, money and we collaborate with mother nature.
+
+With the OpenERP Electronic Invoicing module we can generate invoice batches automatically. The generated document is processed by the fiscal administration (AFIP in Argentina), which will emit an authorization code (CAE) for each invoice.
+
+Once we have the CAE, we can send a copy (pdf or xml) by mail to the client, or he / she can check it / download it online.
+
+
+The main steps are :
+
+Invoice generation in OpenERP -> XML / webservice -> CAE -> mail to client
+
+The module is part  of OpenERP 5.0
+
+Please write to us at openerp@thymbra.com if you have any question abou
+
+Gracias
+Luis Falcon
+lfalcon@thymbra.com

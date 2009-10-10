@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tinyerp>
+<data noupdate="1">
+
+<!-- TIPOS DE DOCUMENTOS -->
+
+	<record model="account.invoice.dt" id="dt80">
+		<field name="name">80</field>
+		<field name="desc">CUIT</field>
+	</record>
+
+	<record model="account.invoice.dt" id="dt86">
+		<field name="name">86</field>
+		<field name="desc">CUIL</field>
+	</record>
+
+
+        <record model="account.invoice.dt" id="dt87">
+                <field name="name">87</field>
+                <field name="desc">CDI</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt89">
+                <field name="name">89</field>
+                <field name="desc">LE</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt90">
+                <field name="name">90</field>
+                <field name="desc">LC</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt91">
+                <field name="name">91</field>
+                <field name="desc">CI Extranjera</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt92">
+                <field name="name">92</field>
+                <field name="desc">En tramite</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt93">
+                <field name="name">93</field>
+                <field name="desc">Acta de Nacimiento</field>
+        </record>
+
+
+        <record model="account.invoice.dt" id="dt94">
+                <field name="name">94</field>
+                <field name="desc">Pasaporte</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt95">
+                <field name="name">95</field>
+                <field name="desc">CI Buenos Aires RNP</field>
+        </record>
+
+
+        <record model="account.invoice.dt" id="d96">
+                <field name="name">96</field>
+                <field name="desc">DNI</field>
+        </record>
+
+
+        <record model="account.invoice.dt" id="dt99">
+                <field name="name">99</field>
+                <field name="desc">No Conoce</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt00">
+                <field name="name">00</field>
+                <field name="desc">Policia Federal</field>
+        </record>
+        <record model="account.invoice.dt" id="dt01">
+                <field name="name">01</field>
+                <field name="desc">CI Buenos Aires</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt07">
+                <field name="name">07</field>
+                <field name="desc">CI Mendoza</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt08">
+                <field name="name">08</field>
+                <field name="desc">CI La Rioja</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt09">
+                <field name="name">09</field>
+                <field name="desc">CI Salta</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt10">
+                <field name="name">10</field>
+                <field name="desc">CI San Juan</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt11">
+                <field name="name">11</field>
+                <field name="desc">CI Santa Fe</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt12">
+                <field name="name">12</field>
+                <field name="desc">CI San Luis</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt13">
+                <field name="name">13</field>
+                <field name="desc">CI Santiago del Estero</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt14">
+                <field name="name">14</field>
+                <field name="desc">CI Tucuman</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt16">
+                <field name="name">16</field>
+                <field name="desc">CI Chaco</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt17">
+                <field name="name">17</field>
+                <field name="desc">CI Chubut</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt18">
+                <field name="name">18</field>
+                <field name="desc">CI Formosa</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt19">
+                <field name="name">19</field>
+                <field name="desc">Misiones</field>
+        </record>
+
+        <record model="account.invoice.dt" id="dt20">
+                <field name="name">20</field>
+                <field name="desc">Neuquen</field>
+        </record>
+
+<!-- SECUENCIAS PARA LA FACTURACION ELECTRONICA 
+
+                                ('01','01-Factura A'),
+                                ('02','02-Nota de Débito A'),
+                                ('03','03-Nota de Crédito A'),
+                                ('04','04-Recibos A'),
+                                ('05','05-Nota de Venta al Contado A'),
+                                ('06','06-Factura B'),
+                                ('07','07-Nota de Débito B'),
+                                ('08','08-Nota de Crédito B'),
+                                ('09','09-Recibos B'),
+                                ('10','10-Notas de Venta al Contado B'),
+                                ('39','39-Otros comprobantes A contemplados en RG 3419'),
+                                ('40','40-Otros comprobantes B contemplados en RG 3419'),
+                                ('60','60-Cuenta de Venta y Líquido producto A'),
+                                ('61','61-Cuenta de Venta y Líquido producto B'),
+                                ('63','63-Liquidación A'),
+                                ('64','64-Liquidación B'),
+
+-->
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_01">
+		<field name="name">01-Factura A</field>
+		<field name="code">account.invoice.out_invoice_01</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_02">
+		<field name="name">02-Nota de Débito A</field>
+		<field name="code">account.invoice.out_invoice_02</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_03">
+		<field name="name">03-Nota de Crédito A</field>
+		<field name="code">account.invoice.out_invoice_03</field>
+	</record>
+
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_04">
+		<field name="name">04-Recibos A</field>
+		<field name="code">account.invoice.out_invoice_04</field>
+	</record>
+
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_05">
+		<field name="name">05-Nota de Venta al Contado A</field>
+		<field name="code">account.invoice.out_invoice_05</field>
+	</record>
+
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_06">
+		<field name="name">06-Factura B</field>
+		<field name="code">account.invoice.out_invoice_06</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_07">
+		<field name="name">07-Nota de Débito B</field>
+		<field name="code">account.invoice.out_invoice_07</field>
+	</record>
+
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_08">
+		<field name="name">08-Nota de Crédito B</field>
+		<field name="code">account.invoice.out_invoice_08</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_09">
+		<field name="name">09-Recibos B</field>
+		<field name="code">account.invoice.out_invoice_09</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_10">
+		<field name="name">10-Notas de Venta al Contado B</field>
+		<field name="code">account.invoice.out_invoice_10</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_39">
+		<field name="name">39-Otros comprobantes A contemplados en RG 3419</field>
+		<field name="code">account.invoice.out_invoice_39</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_40">
+		<field name="name">40-Otros comprobantes B contemplados en RG 3419</field>
+		<field name="code">account.invoice.out_invoice_40</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_60">
+		<field name="name">60-Cuenta de Venta y Líquido producto A</field>
+		<field name="code">account.invoice.out_invoice_60</field>
+	</record>
+
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_61">
+		<field name="name">61-Cuenta de Venta y Líquido producto B</field>
+		<field name="code">account.invoice.out_invoice_61</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_63">
+		<field name="name">63-Liquidación A</field>
+		<field name="code">account.invoice.out_invoice_63</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_64">
+		<field name="name">64-Liquidación B</field>
+		<field name="code">account.invoice.out_invoice_64</field>
+	</record>
+
+<!-- Facturacion NO electronica -->
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_c">
+		<field name="name">Factura C</field>
+		<field name="code">account.invoice.out_invoice_c</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_e">
+		<field name="name">Factura E</field>
+		<field name="code">account.invoice.out_invoice_e</field>
+	</record>
+
+	<record model="ir.sequence.type" id="seq_type_out_invoice_m">
+		<field name="name">Factura M</field>
+		<field name="code">account.invoice.out_invoice_m</field>
+	</record>
+
+
+<!-- Secuencias -->
+
+	<record model="ir.sequence" id="seq_out_invoice_01">
+		<field name="name">01-Factura A</field>
+		<field name="code">account.invoice.out_invoice_01</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">01-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_02">
+		<field name="name">02-Nota de Débito A</field>
+		<field name="code">account.invoice.out_invoice_02</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">02-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_03">
+		<field name="name">03-Nota de Crédito A</field>
+		<field name="code">account.invoice.out_invoice_03</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">03-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_04">
+		<field name="name">04-Recibos A</field>
+		<field name="code">account.invoice.out_invoice_04</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">04-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_05">
+		<field name="name">05-Nota de Venta al Contado A</field>
+		<field name="code">account.invoice.out_invoice_05</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">05-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_06">
+		<field name="name">06-Factura B</field>
+		<field name="code">account.invoice.out_invoice_06</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">06-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_07">
+		<field name="name">07-Nota de Débito B</field>
+		<field name="code">account.invoice.out_invoice_07</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">07-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_08">
+		<field name="name">08-Nota de Crédito B</field>
+		<field name="code">account.invoice.out_invoice_08</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">08-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_09">
+		<field name="name">09-Recibos B</field>
+		<field name="code">account.invoice.out_invoice_09</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">09-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_10">
+		<field name="name">10-Notas de Venta al Contado B</field>
+		<field name="code">account.invoice.out_invoice_10</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">10-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_39">
+		<field name="name">39-Otros comprobantes A contemplados en RG 3419</field>
+		<field name="code">account.invoice.out_invoice_39</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">39-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_40">
+		<field name="name">40-Otros comprobantes B contemplados en RG 3419</field>
+		<field name="code">account.invoice.out_invoice_40</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">40-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_60">
+		<field name="name">60-Cuenta de Venta y Líquido producto A</field>
+		<field name="code">account.invoice.out_invoice_60</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">60-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_61">
+		<field name="name">61-Cuenta de Venta y Líquido producto B</field>
+		<field name="code">account.invoice.out_invoice_61</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">61-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_63">
+		<field name="name">63-Liquidación A</field>
+		<field name="code">account.invoice.out_invoice_63</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">63-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_64">
+		<field name="name">64-Liquidación B</field>
+		<field name="code">account.invoice.out_invoice_64</field>
+		<field name="padding" eval="0"/>
+		<field name="prefix">64-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_c">
+		<field name="name">Factura C</field>
+		<field name="code">account.invoice.out_invoice_c</field>
+		<field name="padding" eval="3"/>
+		<field name="prefix">C-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_e">
+		<field name="name">Factura E</field>
+		<field name="code">account.invoice.out_invoice_e</field>
+		<field name="padding" eval="3"/>
+		<field name="prefix">E-</field>
+	</record>
+
+	<record model="ir.sequence" id="seq_out_invoice_m">
+		<field name="name">Factura M</field>
+		<field name="code">account.invoice.out_invoice_m</field>
+		<field name="padding" eval="3"/>
+		<field name="prefix">M-</field>
+	</record>
+
+
+</data>
+</tinyerp>
