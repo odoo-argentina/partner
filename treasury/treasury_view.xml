@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<terp>
+        <data>
+		<menuitem name="Financial Management/Treasury" id="financial_management_treasury"/>
+
+	        <act_window name="Treasury Documents"
+	                domain="[('partner_id', '=', active_id)]"
+	                res_model="account.treasury"
+	                src_model="res.partner"
+	                id="act_treasury_partner"/>
+
+
+
+
+<!-- Document -->
+
+                <record model="ir.ui.view" id="account_treasury_view">
+                        <field name="name">account.treasury.form</field>
+                        <field name="model">account.treasury</field>
+                        <field name="type">form</field>
+                        <field name="arch" type="xml">
+                                <form string="Treasury Document">
+					<field name="partner_id" select="1"></field>
+					<field name="document_id" select="1"></field>
+					<newline/>
+					<field name="amount"></field>
+					<field name="document_status" select="1"></field>
+					<newline/>
+					<field name="reference" select="1"></field>	
+					<newline/>		
+					<field name="document_emission_date" select="1"></field>
+					<field name="document_clearing_date" select="1"></field>
+					<newline/>
+					<field name="bank_source" select="1"></field>
+					<field name="bank_target"></field>
+					<newline/>
+					<field name="document_type" select="1"></field>
+					<field name="document_op" select="1"></field>
+					<newline/>
+					<field name="third_party" select="1"/>
+					<field name="third_party_partner"/>
+					<newline/>
+					<field name="info" colspan="4"></field>
+                                </form>
+                        </field>
+                </record>
+
+
+
+                <record model="ir.ui.view" id="account_treasury_tree">
+                        <field name="name">account.treasury.tree</field>
+                        <field name="model">account.treasury</field>
+                        <field name="type">tree</field>
+                        <field name="arch" type="xml">
+                                <tree string='Treasury Document'>
+					<field name="partner_id"></field>
+					<field name="document_type"></field>
+                                        <field name="document_id"></field>
+					<field name="amount"></field>
+					<field name="document_op"></field>
+					<field name="reference"></field>
+                                        <field name="document_emission_date"></field>
+                                        <field name="document_clearing_date"></field>
+                                        <field name="document_status"></field>
+                                </tree>
+                        </field>
+                </record>
+
+
+                <record model="ir.actions.act_window" id="account_action_form_treasury">
+                        <field name="name">account.treasury.action.form</field>
+                        <field name="type">ir.actions.act_window</field>
+                        <field name="res_model">account.treasury</field>
+                        <field name="view_type">form</field>
+                        <field name="view_id" ref="account_treasury_view"/>
+                </record>
+
+		<menuitem name="Financial Management/Treasury/Treasury Document" id="treasury_document" action="account_action_form_treasury"/>
+
+		<record model="ir.actions.act_window" id="action_account_treasury_tree">
+			<field name="name">Open Treasury Documents</field>
+			<field name="res_model">account.treasury</field>
+			<field name="view_type">tree</field>
+			<field name="view_id" ref="account_treasury_tree"/>
+			<field name="domain">[('document_status','=','o')]</field>
+		</record>
+
+		<menuitem name="Financial Management/Treasury/Open Treasury Documents" id="treasury_document_tree" action="action_account_treasury_tree"/>
+
+
+
+	</data>
+</terp>
+
