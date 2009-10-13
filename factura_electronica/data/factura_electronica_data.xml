@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<tinyerp>
+<openerp>
 <data noupdate="1">
 
 <!-- TIPOS DE DOCUMENTOS -->
@@ -403,4 +403,4 @@
 
 
 </data>
-</tinyerp>
+</openerp>
