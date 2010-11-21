@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openerp>
-        <data>
-                 <wizard string="Solicitar CAE" model="account.invoice" name="factura_electronica.solicitar_cae"  id="factura_electronica_solicitar_cae"/>
-        </data>
-</openerp>
-

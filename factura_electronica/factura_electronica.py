@@ -1,6 +1,6 @@
 # coding=utf-8
 
-# (C) Luis Falcon - Thymbra
+# 2008 - Today (C) Luis Falcon - Thymbra
 # GPL - GNU Public License
 
 
@@ -174,14 +174,14 @@ tipo_de_documento ()
 class invoice_extended (osv.osv):
 	_inherit="account.invoice"
         def action_number(self, cr, uid, ids, *args):
-                cr.execute('SELECT id, type, number, move_id, partner_id, tipo_comprobante FROM account_invoice WHERE id IN ('+','.join(map(str,ids))+')')
+                cr.execute('SELECT id, type, number, move_id, partner_id, tipo_comprobante FROM account_invoice WHERE id IN (%s)' % ','.join(map(str,ids)))                
                 for (id, invtype, number, move_id, partner_id, tipo_comprobante) in cr.fetchall():
 
                         if not number:
 				if (invtype == "out_invoice"):
 	                                number = self.pool.get('ir.sequence').get(cr, uid, 'account.invoice.'+invtype+'_'+tipo_comprobante)
 				else:
-	                              	number = self.pool.get('ir.sequence').get(cr, uid, 'account.invoice.'+invtype)
+	                              	number = self.pool.get('ir.sequence').get(cr, uid, 'account.invoice.z'+invtype)
                                 cr.execute('UPDATE account_invoice SET number=%s WHERE id=%s', (number, id))
                                 cr.execute('UPDATE account_move_line SET ref=%s WHERE move_id=%s and ref is null', (number, move_id))
                 return True
