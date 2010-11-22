@@ -6,6 +6,6 @@
 	"depends" : ["base","account"],
 	"init_xml" : [],
 	"demo_xml" : [],
-	"update_xml" : ["localizacion_argentina.xml","l10n_ar_wizard.xml"],
+	"update_xml" : ["localizacion_argentina.xml"],
 	"active": False 
 }
