@@ -27,7 +27,7 @@
     'demo_xml': [],
     'update_xml': [
         'res_country_states.xml',
-        'localizacion_argentina.xml',
+        'res_partner_title.xml',
     ],
     'active': False,
 }
