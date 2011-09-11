@@ -40,6 +40,7 @@ Includes:
     'init_xml': [],
     'demo_xml': [],
     'update_xml': [
+        'data/account_types.xml',
         'data/account_chart.xml',
     ],
     'active': False,
