@@ -1,9 +1,7 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution	
-#    Copyright (C) 2004-2009 Tiny SPRL (<http://tiny.be>). All Rights Reserved
-#    $Id$
+#    Copyright (C) 2008-2011  Luis Falcon
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,19 +18,30 @@
 #
 ##############################################################################
 
-
 {
-    'name': 'Plan Contable de demo Argentina',
+    'name': 'Argentinian Chart of Account Generic',
     'version': '1.1',
+    'author': 'Thymbra - Torre de Hanoi',
     'category': 'Localisation/Account Charts',
+    'website': 'http://www.thymbra.com/',
+    'license': 'GPL-3',
     'description': """
-	Plan Contable 
+Localization Model of Argentina
+Includes:
+ - Account Chart Generic
 
-    """,
-    'author': 'Thymbra',
-    'depends': [ 'account','account_report','base_iban','account_chart'],
+""",
+    'depends': [
+        'account',
+        'account_report',
+        'base_iban',
+        'account_chart',
+    ],
     'init_xml': [],
-    'update_xml': [ 'plan_de_cuentas_argentina.xml' ],
+    'demo_xml': [],
+    'update_xml': [
+        'data/account_chart.xml',
+    ],
+    'active': False,
     'installable': True,
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
