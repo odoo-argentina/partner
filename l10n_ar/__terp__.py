@@ -30,7 +30,6 @@ Localization Model of Argentina
 Includes:
  - Provinces
  - Denominations of Partners and Contacts
- - Added check the validity of that VAT Number for Argentina
 
 """,
     'depends': [
