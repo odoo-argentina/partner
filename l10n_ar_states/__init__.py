@@ -17,31 +17,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-{
-    'name': 'Localization for Argentina',
-    'version': '1.0',
-    'author': 'Thymbra - Torre de Hanoi',
-    'category': 'Localisation/Argentina',
-    'website': 'http://www.thymbra.com/',
-    'license': 'GPL-3',
-    'description': """
-Localization Model of Argentina
-Includes:
- - Provinces
- - Denominations of Partners and Contacts
-
-""",
-    'depends': [
-        'base',
-        'account',
-    ],
-    'init_xml': [],
-    'demo_xml': [],
-    'update_xml': [
-        'res_country_states.xml',
-        'res_partner_title.xml',
-    ],
-    'active': False,
-    'installable': True,
-}
