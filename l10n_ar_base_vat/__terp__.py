@@ -1,9 +1,7 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution	
-#    Copyright (C) 2004-2009 Tiny SPRL (<http://tiny.be>). All Rights Reserved
-#    $Id$
+#    Copyright (C) 2008-2011  Luis Falcon
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,7 +18,23 @@
 #
 ##############################################################################
 
-import partner
+{
+    'name': 'VAT Localization Argentina',
+    'version': '0.1',
+    'author': 'Thymbra - Torre de Hanoi',
+    'category': 'Localisation/Base',
+    'website': 'http://www.thymbra.com/',
+    'license': 'GPL-3',
+    'description': """
+Localization Model of Argentina
+Includes:
+ - Added check the validity of that VAT Number for Argentina
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
-
+""",
+    'depends': [
+        'base_vat',
+    ],
+    'update_xml': [],
+    'active': False,
+    'installable': True,
+}
