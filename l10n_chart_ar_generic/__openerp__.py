@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    'name': 'Argentinian Chart of Account Generic',
+    'name': 'Argentina - Chart of Account',
     'version': '1.1',
     'author': 'Thymbra - Torre de Hanoi',
     'category': 'Localisation/Account Charts',
@@ -42,6 +42,7 @@ Includes:
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart.xml',
+        'data/l10n_ar_wizard.xml',
     ],
     'active': False,
     'installable': True,
