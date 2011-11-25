@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    'name': 'Argentina - Chart of Account',
+    'name': 'Argentina - Plan Contable General',
     'version': '1.1',
     'author': 'Thymbra - Torre de Hanoi',
     'category': 'Localisation/Account Charts',
@@ -39,10 +39,13 @@ Includes:
     ],
     'init_xml': [],
     'demo_xml': [],
+    'test': [
+    ],
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart.xml',
         'data/l10n_ar_wizard.xml',
+        'account_installer.xml',
     ],
     'active': False,
     'installable': True,
