@@ -39,14 +39,15 @@ Includes:
     ],
     'init_xml': [],
     'demo_xml': [],
-    'test': [
-    ],
+    'test': [],
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart.xml',
         'data/l10n_ar_wizard.xml',
-        'account_installer.xml',
+        'data/modules_installer.xml',
     ],
     'active': False,
     'installable': True,
 }
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

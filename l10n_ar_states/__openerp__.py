@@ -20,7 +20,7 @@
 
 {
     'name': 'Managin States in Argentina',
-    'version': '1.0',
+    'version': '1.1',
     'author': 'Thymbra - Torre de Hanoi',
     'category': 'Localisation/Argentina',
     'website': 'http://www.thymbra.com/',
@@ -38,6 +38,9 @@ Includes:
     'demo_xml': [],
     'update_xml': [
         'data/res_country_state.xml',
+    ],
+    'test': [
+        'test/test_states.yml',
     ],
     'active': False,
     'installable': True,

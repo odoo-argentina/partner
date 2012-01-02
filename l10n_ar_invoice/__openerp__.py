@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2008-2011  Luis Falcon
+#    Copyright (C) 2011-2014  Cristian S. Rocha
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -18,4 +18,31 @@
 #
 ##############################################################################
 
-import country
+{
+    'name': 'Argentina - Generador de Talonarios',
+    'version': '1.0',
+    'author': 'Moldeo Interactive',
+    'category': 'Argentina/Invoices',
+    'website': 'http://www.moldeointeractive.com/',
+    'license': 'GPL-3',
+    'description': """
+Generador de Talonarios para la Argentina.
+
+    Permite generar talonarios para comprobanetes según requerimientos del AFIP.
+""",
+    'depends': [
+        'l10n_chart_ar_generic',
+    ],
+    'init_xml': [],
+    'demo_xml': [],
+    'test': [
+        'test/wizard_installer.yml',
+    ],
+    'update_xml': [
+        'data/invoice_installer.xml',
+    ],
+    'active': False,
+    'installable': True,
+}
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

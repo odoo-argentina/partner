@@ -1,20 +1,20 @@
 <openerp>
     <data>
-        <record id="view_invoice_ar_installer" model="ir.ui.view">
-            <field name="name">account.invoice.ar.installer.form</field>
-            <field name="model">account.invoice.ar.installer</field>
+        <record id="view_modules_ar_installer" model="ir.ui.view">
+            <field name="name">account.modules.ar.installer.form</field>
+            <field name="model">account.modules.ar.installer</field>
             <field name="type">form</field>
             <field name="inherit_id" ref="base.res_config_installer"/>
             <field name="arch" type="xml">
               <data>
                     <form position="attributes">
-                        <attribute name="string">Invoice Configuration for Argentina</attribute>
+                        <attribute name="string">Extensions for Argentina Localization</attribute>
                     </form>
                     <separator string="title" position="attributes">
-                         <attribute name="string">Invoice Configuration for Argentina</attribute>
+                         <attribute name="string">Extensions for Argentina Localization</attribute>
                     </separator>
                     <xpath expr="//label[@string='description']" position="attributes">
-                        <attribute name="string">In this section you will configure all low level elements and journals nescesary for manage argentinian invoices types</attribute>
+                        <attribute name="string">In this section you will select available extensions for Argentina Localization</attribute>
                     </xpath>
                     <xpath expr="//button[@string='Install Modules']" position="attributes">
                         <attribute name="string">Configure</attribute>
@@ -23,29 +23,31 @@
                         <attribute name='string'></attribute>
                     </xpath>
 		    <group colspan="8">
-			    <field name="situation"/><newline/>
-			    <field name="currency"/><newline/>
-			    <field name="do_export"/>
+			<field name="install_invoice"/><newline/>
+			<field name="install_bank"/><newline/>
+			<field name="install_vat"/><newline/>
+			<field name="install_partner_title"/><newline/>
+			<field name="install_states"/><newline/>
 		    </group>
               </data>
             </field>
         </record>
 
-	<record id="action_invoice_ar_installer" model="ir.actions.act_window">
-	  <field name="name">Configuración de Facturación</field>
+	<record id="action_modules_ar_installer" model="ir.actions.act_window">
+	  <field name="name">Extensiones para la localización Argentina</field>
 	  <field name="type">ir.actions.act_window</field>
-	  <field name="res_model">account.invoice.ar.installer</field>
-	  <field name="view_id" ref="view_invoice_ar_installer"/>
+	  <field name="res_model">account.modules.ar.installer</field>
+	  <field name="view_id" ref="view_modules_ar_installer"/>
           <field name="view_type">form</field>
           <field name="view_mode">form</field>
           <field name="target">new</field>
 	</record>
 
-	<record id="invoice_installer_todo" model="ir.actions.todo">
-		<field name="action_id" ref="action_invoice_ar_installer"/>
+	<record id="modules_ar_installer_todo" model="ir.actions.todo">
+		<field name="action_id" ref="action_modules_ar_installer"/>
 		<field name="sequence">12</field>
 		<field name="restart">always</field>
-		<!--field eval="[(6,0,[ref('base.group_extended')])]" name="groups_id"/-->
 	</record>
     </data>
 </openerp>
+
