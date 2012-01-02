@@ -18,6 +18,8 @@
 #
 ##############################################################################
 
+from osv import fields, osv
+
 class Country(osv.osv):
         _inherit = 'res.country'
         _columns = {
