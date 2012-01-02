@@ -18,23 +18,9 @@
 #
 ##############################################################################
 
-{
-    'name': 'VAT Localization Argentina',
-    'version': '0.2',
-    'author': 'Thymbra - Torre de Hanoi',
-    'category': 'Localisation/Base',
-    'website': 'http://www.thymbra.com/',
-    'license': 'GPL-3',
-    'description': """
-Localization Model of Argentina
-Includes:
- - Added check the validity of that VAT Number for Argentina
+class Country(osv.osv):
+        _inherit = 'res.country'
+        _columns = {
+                'afip_code': fields.char('AFIP code', size=64, help='Codigo oficial del AFIP.', required=True, translate=True),
+        }
 
-""",
-    'depends': [
-        'base_vat',
-    ],
-    'update_xml': [],
-    'active': False,
-    'installable': True,
-}

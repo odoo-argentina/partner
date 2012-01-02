@@ -17,3 +17,30 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
+{
+    'name': 'Managin States in Argentina',
+    'version': '1.1',
+    'author': 'Thymbra - Torre de Hanoi',
+    'category': 'Localisation/Argentina',
+    'website': 'http://www.thymbra.com/',
+    'license': 'GPL-3',
+    'description': """
+Localization Model for Argentina
+Includes:
+ - Provinces
+
+""",
+    'depends': [
+        'base',
+    ],
+    'init_xml': [],
+    'demo_xml': [],
+    'update_xml': [
+        'data/res_country_state.xml',
+    ],
+    'test': [
+    ],
+    'active': False,
+    'installable': True,
+}
