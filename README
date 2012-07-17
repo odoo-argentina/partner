@@ -1,9 +1,6 @@
-Módulo de localización Argentina
+Listado de provincias de la República Argentina.
 
-Autores:
-    Luis Falcon <lfalcon@thymbra.com>
-    Bruno M. Villasanti <bvillasanti@thymbra.com>
+Incluye:
+ - Listado de Provincias.
+ - Codificación AFIP de cada provincia.
 
-Licencia: GPL-3
-
-(C) 2005 - present
