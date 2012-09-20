@@ -2,6 +2,13 @@
 <openerp>
     <data noupdate="True">
 
+        <record model="res.country.state" id="CBA">
+            <field name="name">Ciudad Autónoma de Buenos Aires</field>
+            <field name="code">ABA</field>
+            <field name="country_id" ref="base.ar"/>
+	    <field name="afip_code">0</field>
+        </record>
+
         <record model="res.country.state" id="B">
             <field name="name">Buenos Aires</field>
             <field name="code">B</field>
