@@ -23,6 +23,6 @@ from osv import fields, osv
 class Country(osv.osv):
         _inherit = 'res.country'
         _columns = {
-                'afip_code': fields.char('AFIP code', size=64, help='Codigo oficial del AFIP.', required=True, translate=True),
+                'afip_code': fields.char('AFIP code', size=64, help='Codigo oficial del AFIP.'),
         }
 
