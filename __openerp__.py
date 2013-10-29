@@ -18,32 +18,18 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    'name':     'Argentina - Listado de Provincias.',
-    'version':  '2.7.155',
-    'author':   'OpenERP - Team de Localización Argentina',
+{   'active': False,
+    'author': 'OpenERP - Team de Localizaci\xc3\xb3n Argentina',
     'category': 'Localization/Argentina',
-    'website':  'https://launchpad.net/~openerp-l10n-ar-localization',
-    'license':  'AGPL-3',
-    'description': """
-Listado de provincias de la República Argentina.
-
-Incluye:
- - Listado de Provincias.
- - Codificación AFIP de cada provincia.
-""",
-    'depends': [
-        'base',
-    ],
-    'init_xml': [],
     'demo_xml': [],
-    'update_xml': [
-        'data/res_country_state.xml',
-    ],
-    'test': [
-    ],
-    'active': False,
+    'depends': ['base'],
+    'description': '\n\nListado de provincias de la Rep\xc3\xbablica Argentina.\n\n\n\nIncluye:\n\n - Listado de Provincias.\n\n - Codificaci\xc3\xb3n AFIP de cada provincia.\n\n',
+    'init_xml': [],
     'installable': True,
-}
-
+    'license': 'AGPL-3',
+    'name': 'Argentina - Listado de Provincias.',
+    'test': [],
+    'update_xml': ['data/res_country_state.xml'],
+    'version': '2.7.206',
+    'website': 'https://launchpad.net/~openerp-l10n-ar-localization'}
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
