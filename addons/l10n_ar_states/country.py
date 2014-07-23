@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-# Copyright (C) 2012 OpenERP - Team de Localización Argentina.
-# https://launchpad.net/~openerp-l10n-ar-localization
+# Copyright (C) 2014 Otra localización argentina de Odoo.
+# http://odoo-l10n-ar.github.io/
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -32,3 +32,4 @@ class country_state(osv.osv):
                 'afip_code': fields.char('AFIP code', size=64, help='Codigo oficial del AFIP.'),
         }
 
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

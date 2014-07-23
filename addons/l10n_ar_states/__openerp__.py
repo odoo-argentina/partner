@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-# Copyright (C) 2012 OpenERP - Team de Localización Argentina.
-# https://launchpad.net/~openerp-l10n-ar-localization
+# Copyright (C) 2014 Otra localización argentina de Odoo.
+# http://odoo-l10n-ar.github.io/
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 #
 ##############################################################################
 {   'active': False,
-    'author': 'OpenERP - Team de Localizaci\xc3\xb3n Argentina',
+    'author': 'Otra localización argentina de Odoo.',
     'category': 'Localization/Argentina',
     'demo_xml': [],
     'depends': ['base'],
