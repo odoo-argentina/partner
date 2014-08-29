@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- Copyright (C), 2012, OpenERP - Team de Localización Argentina.
- https://launchpad.net/~openerp-l10n-ar-localization
+ Copyright (C), 2014 Otra localización argentina de Odoo.
+ http://odoo-l10n-ar.github.io/
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -17,11 +17,11 @@
  along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <openerp>
-    <data noupdate="True">
+    <data>
 
-        <record model="res.country.state" id="CBA">
+        <record model="res.country.state" id="CABA">
             <field name="name">Ciudad Autónoma de Buenos Aires</field>
-            <field name="code">ABA</field>
+            <field name="code">C</field>
             <field name="country_id" ref="base.ar"/>
 	    <field name="afip_code">0</field>
         </record>
@@ -45,13 +45,6 @@
             <field name="code">S</field>
             <field name="country_id" ref="base.ar"/>
 	    <field name="afip_code">12</field>
-        </record>
-
-        <record model="res.country.state" id="C">
-            <field name="name">Capital Federal</field>
-            <field name="code">C</field>
-            <field name="country_id" ref="base.ar"/>
-	    <field name="afip_code">0</field>
         </record>
 
         <record model="res.country.state" id="M">
@@ -196,3 +189,7 @@
 
     </data>
 </openerp>
+
+<!-- vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4
+     -->
+
