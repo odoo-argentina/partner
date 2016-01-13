@@ -24,7 +24,7 @@
  '\n\n\n\nfrom the CLI.\n\n\n\n',
  'external_dependencies': {'python': ['BeautifulSoup', 'geopy']},
  'init_xml': [],
- 'installable': True,
+ 'installable': False,
  'license': 'AGPL-3',
  'name': 'Banks of Argentina',
  'test': ['test/l10n_ar_banks_wizard.yml'],
@@ -32,6 +32,6 @@
           'l10n_ar_bank.xml',
           'l10n_ar_bank_menu.xml',
           'wizard/wiz_l10n_ar_bank.xml'],
- 'version': '8.0.1.1',
+ 'version': '9.0.0.0.0',
  'website': 'https://launchpad.net/~openerp-l10n-ar-localization'}
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

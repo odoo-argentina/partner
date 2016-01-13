@@ -8,9 +8,9 @@
  ' no físicas.\n\n\n\nIncluye:\n\n\n\n - '
  'Denominación de clientes, proveedores y contactos.\n\n\n\n',
  'init_xml': [],
- 'installable': True,
+ 'installable': False,
  'license': 'AGPL-3',
  'name': 'Argentina - Nombre y títulos de personas físicas o no.',
  'data': ['data/res_partner_title.xml'],
- 'version': '8.0.1.1',
+ 'version': '9.0.0.0.0',
  'website': 'https://launchpad.net/~openerp-l10n-ar-localization'}
