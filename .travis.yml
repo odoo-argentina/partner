@@ -33,35 +33,32 @@ addons:
 env:
   global:
   - VERSION="8.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
-  - TRANSIFEX_USER='transbot@odoo-community.org'
+  - TRANSIFEX_USER='jjscarafia'
   # This line contains the encrypted transifex password
   # To encrypt transifex password, install travis ruby utils with:
   #   $ gem install travis --user-install
   # and use:
   #   $ travis encrypt TRANSIFEX_PASSWORD=your-password -r owner/project
-  # Secure list for current OCA projects is in https://github.com/OCA/maintainer-quality-tools/issues/194
-  - secure: PjP88tPSwimBv4tsgn3UcQAD1heK/wcuSaSfhi2xUt/jSrOaTmWzjaW2gH/eKM1ilxPXwlPGyAIShJ2JJdBiA97hQufOeiqxdkWDctnNVVEDx2Tk0BiG3PPYyhXPgUZ+FNOnjZFF3pNWvzXTQaB0Nvz8plqp93Ov/DEyhrCxHDs=
+  - secure: b5ZG2hP1ZeGL2tinp6tmW58qwZ38u5+v5V2S1VGzi2t6NRQkVEmh1842plyXegOOvhfATBo4yVW1kBd7pch3Ugz2gUfOF0KMdt0UnfdUHob1tTkcGgikgXsWcnQC5v5jfjNbNZSy4E9y/F3Y4W/Cb5uyRbPO6UGqYJi4ZJQabMiuWEv7OHRL1H/i3Li+qk+7WIOejulpo3Jmf9eO6cMIVdR27cmRNF+4eivukyQuXWh2s8kfq/DZ/eR+dS0Xgwg5VrOoE6WMNN0v9c6clnpNE34RPL7i8cv2NjfQXibhufxX4fugINT0IotwTRuC4ZxiXBx+0i5gTdxs5TJPd1FN6nvsN/FRidhspP6so6Mk3SV2Z6Z1eZr5qhrmt5ATFOsAYRsWTP+SrOVFGzBXtqqVh+3KCd3su/l289HMWN0MUUW7aMis/160qADv6DCm9M/WI5OE2Z1LktZL0y9ikwXdkgWxPhtncG+VJrhrg6RacABkJdFX3Plik2VGIGboXRcZj24PD6cPdj/zkKJTKCSSmiYCxrFGnGIju3fVpDn4Wn5z4VVtDpHLZ0dvBHNR51Bvd77lkywsAKSin+dW3Vf+M21u4I9VWjTBB7JaNM4EcnJPo0ctHUcsHxWmpOOz84TlLmzq5BPlCfmodRPRMhM8NiQ3n8ZAuq/TOk/RDus9dJo=
   # Use the following lines if you need to manually change the transifex project slug or/and the transifex organization.
   # The default project slug is owner-repo_name-version (with dash in the version string).
   # The default organization is the owner of the repo.
   # The default fill up resources (TM) is True.
   # The default team is 23907. https://www.transifex.com/organization/oca/team/23907/
   # - TRANSIFEX_PROJECT_SLUG=
-  # - TRANSIFEX_ORGANIZATION=
+  - TRANSIFEX_ORGANIZATION='odoo-argentina'
   # - TRANSIFEX_FILL_UP_RESOURCES=
-  # - TRANSIFEX_TEAM=
+  - TRANSIFEX_TEAM='58916'
 
   matrix:
   - LINT_CHECK="1"
   - TRANSIFEX="1"
   - TESTS="1" ODOO_REPO="odoo/odoo"
-  - TESTS="1" ODOO_REPO="OCA/OCB"
 # either use the two lines above or the two below. Don't change the default if
 # it's not necessary (it is only necessary if modules in your repository can't
 # be installed in the same database. And you get a huge speed penalty in your
 # tests)
 #  - TESTS="1.0" ODOO_REPO="odoo/odoo" UNIT_TEST="1"
-#  - TESTS="1.0" ODOO_REPO="OCA/OCB" UNIT_TEST="1"
 
 virtualenv:
   system_site_packages: true

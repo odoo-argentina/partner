@@ -1,6 +1,6 @@
-# OCA Guidelines
+# ODOO ARGENTINA Guidelines
 
-Please follow the official guide from the [OCA Guidelines page](https://github.com/OCA/maintainer-tools/blob/master/CONTRIBUTING.md).
+Please follow the official guide from the [ODOO ARGENTINA Guidelines page](https://github.com/odoo-argentina/maintainer-quality-tools/wiki/Guidelines-page).
 
 ## Project Specific Guidelines
 
