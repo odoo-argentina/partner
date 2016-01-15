@@ -1,4 +1,4 @@
-[![Runbot Status](https://runbot.odoo-argentina.org/runbot/badge/flat/${REPO_ID}/9.0.svg)](https://runbot.odoo-argentina.org/runbot/repo/github-com-odoo-argentina-partner-${REPO_ID})
+[![Runbot Status](http://runbot.odoo-argentina.org/runbot/badge/flat/3/9.0.svg)](http://runbot.odoo-argentina.org/runbot/repo/github-com-odoo-argentina-config-3)
 [![Build Status](https://travis-ci.org/odoo-argentina/partner.svg?branch=9.0)](https://travis-ci.org/odoo-argentina/partner)
 [![Coverage Status](https://coveralls.io/repos/odoo-argentina/partner/badge.svg?branch=9.0&service=github)](https://coveralls.io/github/odoo-argentina/partner?branch=9.0)
 [![Code Climate](https://codeclimate.com/github/odoo-argentina/partner/badges/gpa.svg)](https://codeclimate.com/github/odoo-argentina/partner)
