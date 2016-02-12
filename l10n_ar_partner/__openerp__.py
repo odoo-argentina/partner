@@ -13,4 +13,4 @@
         'data/res_partner_document_type.xml',
     ],
     'version': '9.0.0.0.0',
- }
+}
