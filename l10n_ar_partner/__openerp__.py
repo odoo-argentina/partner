@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-{'active': False,
- 'author': 'OpenERP - Team de Localización Argentina',
- 'category': 'Localization/Argentina',
- 'demo_xml': [],
- 'depends': ['base'],
- 'description': 'Módulo de nombres y títulos para personas físicas y'
- ' no físicas.\n\n\n\nIncluye:\n\n\n\n - '
- 'Denominación de clientes, proveedores y contactos.\n\n\n\n',
- 'init_xml': [],
- 'installable': False,
- 'license': 'AGPL-3',
- 'name': 'Argentina - Nombre y títulos de personas físicas o no.',
- 'data': ['data/res_partner_title.xml'],
- 'version': '9.0.0.0.0',
- 'website': 'https://launchpad.net/~openerp-l10n-ar-localization'}
+{
+    'author': "Moldeo Interactive,ADHOC SA",
+    'category': 'Localization/Argentina',
+    'demo_xml': [],
+    'depends': ['partner_documents'],
+    'init_xml': [],
+    'installable': True,
+    'license': 'AGPL-3',
+    'name': 'Argentina - Datos de documentos y títulos de personerías',
+    'data': [
+        'data/res_partner_title.xml',
+        'data/res_partner_document_type.xml',
+    ],
+    'version': '9.0.0.0.0',
+ }
