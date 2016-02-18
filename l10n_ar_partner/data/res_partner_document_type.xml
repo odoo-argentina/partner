@@ -122,9 +122,13 @@
             <field name='code'>24</field>
         </record> 
         <record model='res.partner.document.type' id='dt_CUIT'>
-            <field name='abbreviation'>CUIT</field>
-            <field name='name'>CUIT</field>
             <field name='code'>80</field>
+            <field name='name'>Código Único de Identificación Tributaria</field>
+            <field name='abbreviation'>CUIT</field>
+            <field name='validator_re'>^\d\d{6,10}\d$</field>
+            <field name='template_re'>(\d\d)(\d*)(\d)</field>
+            <field name='template'>{0}-{1}-{2}</field>
+            <field name='test_in'>23250954549</field>
         </record> 
         <record model='res.partner.document.type' id='dt_CUIL'>
             <field name='abbreviation'>CUIL</field>
@@ -146,10 +150,15 @@
             <field name='name'>LC</field>
             <field name='code'>90</field>
         </record> 
+        <!-- TODO modificar este para que acepte letras tmb -->
         <record model='res.partner.document.type' id='dt_CIe'>
             <field name='abbreviation'>CIe</field>
             <field name='name'>CI extranjera</field>
             <field name='code'>91</field>
+            <field name='validator_re'>^\d*$</field>
+            <field name='template_re'>(.*)</field>
+            <field name='template'>{0}</field>
+            <field name='test_in'>21345654</field>
         </record> 
         <record model='res.partner.document.type' id='dt_ET'>
             <field name='abbreviation'>ET</field>
@@ -172,8 +181,14 @@
             <field name='code'>95</field>
         </record> 
         <record model='res.partner.document.type' id='dt_DNI'>
+            <field name='name'>Documento Nacional de Identidad</field>
             <field name='abbreviation'>DNI</field>
-            <field name='name'>DNI</field>
+            <field name='validator_re'>^\d*$</field>
+            <field name='sub_re'>(?&lt;=\d)(?=(\d\d\d)+(?!\d))</field>
+            <field name='sub'>.</field>
+            <field name='template_re'>([\d.]*)</field>
+            <field name='template'>{0}</field>
+            <field name='test_in'>25095454</field>
             <field name='code'>96</field>
         </record> 
         <record model='res.partner.document.type' id='dt_Sigd'>
