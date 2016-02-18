@@ -2,6 +2,12 @@
 <openerp>
     <data>
     <!-- Partners -->
+        <!-- Main Partner -->
+        <record id="base.main_partner" model="res.partner">
+            <field name='document_type_id' ref="dt_CUIT"/>
+            <field name='document_value'>30111111118</field>
+        </record>
+
         <!-- ASUSTeK - Supplier -->
         <record id="base.res_partner_1" model="res.partner">
             <!-- <field name='vat'>AR30222222229</field> -->
