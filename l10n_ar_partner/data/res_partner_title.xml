@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data noupdate="True">
+    <data>
 
         <record model="res.partner.title" id="sa">
             <field name="name">Sociedad Anónima</field>
@@ -53,7 +53,7 @@
         </record>
 
         <record model="res.partner.title" id="phd">
-            <field name="name">Ph. Doctor</field>
+            <field name="name">Doctor en Filosofía</field>
             <field name="shortcut">PhD.</field>
         </record>
 
