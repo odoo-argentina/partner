@@ -17,24 +17,21 @@
  along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <openerp>
-    <data noupdate="True">
+    <data>
 
         <record model="res.partner.title" id="sa">
             <field name="name">Sociedad Anónima</field>
             <field name="shortcut">S.A.</field>
-            <field name="domain">partner</field>
         </record>
 
         <record model="res.partner.title" id="srl">
             <field name="name">Sociedad Limitada</field>
             <field name="shortcut">S.R.L.</field>
-            <field name="domain">partner</field>
         </record>
 
         <record model="res.partner.title" id="sdh">
             <field name="name">Sociedad de Hecho</field>
             <field name="shortcut">S.D.H.</field>
-            <field name="domain">partner</field>
         </record>
 
         <record model="res.partner.title" id="sr">
@@ -46,55 +43,46 @@
         <record model="res.partner.title" id="sra">
             <field name="name">Señora</field>
             <field name="shortcut">Sra</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="srta">
             <field name="name">Señorita</field>
             <field name="shortcut">Srta</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="ing">
             <field name="name">Ingeniero</field>
             <field name="shortcut">Ing.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="lic">
             <field name="name">Licenciado</field>
             <field name="shortcut">Lic.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="doc">
             <field name="name">Doctor</field>
             <field name="shortcut">Doc.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="med">
             <field name="name">Médico</field>
             <field name="shortcut">Med.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="phd">
-            <field name="name">Ph. Doctor</field>
+            <field name="name">Doctor en Filosofía</field>
             <field name="shortcut">PhD.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="tec">
             <field name="name">Técnico</field>
             <field name="shortcut">Tec.</field>
-            <field name="domain">contact</field>
         </record>
 
         <record model="res.partner.title" id="coop">
             <field name="name">Cooperativa</field>
             <field name="shortcut">Coop.</field>
-            <field name="domain">partner</field>
         </record>
 
     </data>

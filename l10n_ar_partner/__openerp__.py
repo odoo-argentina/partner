@@ -8,7 +8,7 @@
  ' no físicas.\n\n\n\nIncluye:\n\n\n\n - '
  'Denominación de clientes, proveedores y contactos.\n\n\n\n',
  'init_xml': [],
- 'installable': False,
+ 'installable': True,
  'license': 'AGPL-3',
  'name': 'Argentina - Nombre y títulos de personas físicas o no.',
  'data': ['data/res_partner_title.xml'],
