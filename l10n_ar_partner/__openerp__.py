@@ -11,8 +11,9 @@
     'data': [
         'data/res_partner_title.xml',
         'data/res_partner_category.xml',
+    ],
+    'demo': [
         'demo/partner_demo.xml',
     ],
-    'version': '9.0.0.0.1',
+    'version': '9.0.0.0.2',
 }
-
