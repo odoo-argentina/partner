@@ -24,14 +24,14 @@
  '\n\n\n\nfrom the CLI.\n\n\n\n',
  'external_dependencies': {'python': ['BeautifulSoup', 'geopy']},
  'init_xml': [],
- 'installable': False,
+ 'installable': True,
  'license': 'AGPL-3',
  'name': 'Banks of Argentina',
  'test': ['test/l10n_ar_banks_wizard.yml'],
  'data': ['data/res_bank.xml',
-          'l10n_ar_bank.xml',
-          'l10n_ar_bank_menu.xml',
+          'view/l10n_ar_bank.xml',
+          'view/l10n_ar_bank_menu.xml',
           'wizard/wiz_l10n_ar_bank.xml'],
- 'version': '9.0.0.0.0',
- 'website': 'https://launchpad.net/~openerp-l10n-ar-localization'}
+ 'version': '9.0.0.0.1',
+ 'website': 'https://github.com/odoo-argentina/partner/'}
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
