@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from openerp import fields, models, api
-from openerp.exections import ValidationError
+from openerp.exceptions import ValidationError
 
 
 class Bank(models.Model):
@@ -47,16 +47,16 @@ class partner_bank(models.Model):
     @api.onchange('acc_number')
     def set_bank_from_ar_acc_number(self):
         if self.acc_number and \
-                self.partner_id.country.code == 'AR' and \
+                self.partner_id.country_id.code == 'AR' and \
                 self.is_valid_ar_acc_number() and \
                 not self.bank_id:
-            bank_code = self.acc_number[:3]
+            bank_code = int(self.acc_number[:3])
             self.bank_id = self.bank_id.search(
-                ['bcra_code', 'ilike', bank_code],
+                [['bcra_code', '=', "%05i" % bank_code]],
                 limit=1
             )
 
-    @api.constraints('acc_number', 'bank_id.country')
+    @api.constrains('acc_number', 'bank_id.country')
     def check_ar_acc_number(self):
         if self.acc_number and self.bank_id and \
                 self.bank_id.country.code == 'AR' and \

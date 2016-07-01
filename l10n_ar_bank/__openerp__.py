@@ -29,7 +29,7 @@
  'name': 'Banks of Argentina',
  'test': ['test/l10n_ar_banks_wizard.yml'],
  'data': ['data/res_bank.xml',
-          'view/l10n_ar_bank.xml',
+          'view/l10n_ar_bank_view.xml',
           'view/l10n_ar_bank_menu.xml',
           'wizard/wiz_l10n_ar_bank.xml'],
  'version': '9.0.0.0.1',
